@@ -1,0 +1,117 @@
+.justify-content-center {
+  justify-content:center;
+  align-self:center;
+  text-align: center;
+}
+
+.justify-content-start {
+  justify-content:flex-start;
+  align-self:center;
+  text-align: left;
+}
+
+.justify-content-end {
+  justify-content:flex-end;
+  align-self:center;
+  text-align: right;
+}
+
+.flex-wrap-collum {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+h1 {
+  color:white;
+  padding: 60px 0;
+}
+
+input {
+  margin: 10px 0;
+  height: 60px !important;
+  color:#4B4B4B;
+  border: solid 2px #E8E8E8;
+  border-radius:5px !important;
+  letter-spacing: 1px !important;
+  font-weight: 500 !important;
+  padding: 20px 10px !important;
+}
+
+input:focus {
+ outline: none !important;
+ border: solid 2px #E8E8E8;
+-webkit-box-shadow: none !important;
+box-shadow:  none !important;
+}
+
+label {
+  color:#921FEC;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin: 15px 0 0;
+}
+
+button, button:hover, button:active, button:focus, button:after {
+  content: none !important;
+  background-color: #00D2A6 !important;
+  color: white;
+  text-transform: uppercase !important;
+  border:0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow:  none !important;
+  outline: none !important;
+  height: 50px !important;
+  margin: 15px 0 !important;
+  min-width: 200px !important;
+  border-radius:5px !important;
+}
+
+button:disabled,button.disabled:active {
+  background-color:rgb(5, 141, 112) !important;
+}
+
+.form-control.is-invalid {
+  border: 2px #FF4286 solid !important;
+
+  &::placeholder {
+    color:#FF4286;
+  }
+}
+
+.form-control.is-valid {
+  border: 2px #00D2A6 solid;
+}
+
+.error {
+  color:#FF4286;
+}
+
+.custom-checkbox {
+  margin-top: 15px;
+}
+
+.custom-control-label {
+  padding: 2px;
+  &:before {
+    border-radius: 3px;
+    content: '';
+    background: #E8E8E8 !important;
+    width: 1.125rem;
+    height: 1.125rem;
+    display: block;
+    margin-right: 0.625rem;
+    position: absolute;
+    top: 3px;
+    z-index: 0;
+    border:0 !important;
+  }
+}
+
+.custom-control-input {
+  &:checked ~ .custom-control-label::before {
+    content: '';
+    border:0;
+    background-color: #00D2A6 !important;
+    display: block;
+  }
+}

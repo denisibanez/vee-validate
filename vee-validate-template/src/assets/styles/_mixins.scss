@@ -1,0 +1,12 @@
+@mixin stelo-bg-gradient() {
+  background: rgba(80,33,127,1);
+  background: -moz-linear-gradient(-45deg, rgba(80,33,127,1) 0%, rgba(52,110,151,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(80,33,127,1)), color-stop(100%, rgba(52,110,151,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(80,33,127,1) 0%, rgba(52,110,151,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(80,33,127,1) 0%, rgba(52,110,151,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(80,33,127,1) 0%, rgba(52,110,151,1) 100%);
+  background: linear-gradient(135deg, rgba(80,33,127,1) 0%, rgba(52,110,151,1) 100%);
+  height: -webkit-fill-available;
+  display: table;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50217f', endColorstr='#346e97', GradientType=1 );
+}
